@@ -1,9 +1,25 @@
+//const Logger = require('./logger');
+//const logger = new Logger();
 
-    //console.log('Hello From Node.JS...');
+//logger.on('message', data => console.log('Called listener', data));
 
-const Person = require('./person');
+//logger.log('hello world');
+//logger.log('hi');
+//logger.log('hello');
 
-const person1 = new Person('John Doe', 30);
 
-person1.greeting();
+//console.log('Hello From Node.JS...');
 
+const http = require('http');
+const path = require('path');
+const fs = require('fs');
+
+const server = http.createServer((req, res) => {
+if(req.url === '/'){
+    res.end('<h1>HOMEPAGE</h1>');
+}
+});
+
+const PORT = process.env.PORT || 5000;
+
+server.listen(PORT, () =>console.log(`server running on port ${PORT}`));
