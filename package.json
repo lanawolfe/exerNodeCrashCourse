@@ -1,0 +1,25 @@
+{
+  "name": "node_crash_Course",
+  "version": "1.0.0",
+  "description": "node crash course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanawolfe/exerNodeCrashCourse.git"
+  },
+  "author": "lana wolfe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lanawolfe/exerNodeCrashCourse/issues"
+  },
+  "homepage": "https://github.com/lanawolfe/exerNodeCrashCourse#readme",
+  "dependencies": {
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
